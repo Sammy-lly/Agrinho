@@ -1,64 +1,87 @@
-<html>
-    <head>
-        <title> Projeto Agrinho </title>
+<header>
+  <h1>Agrinho 2026</h1>
+  <p>Conectando Campo, Cidade e Sustentabilidade</p>
+</header>
 
-        <style>
-            /* AQUI COMEÇA O CSS PARA DAR COR E TAMANHO */
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#problemas">Problemas</a>
+  <a href="#solucoes">Soluções</a>
+  <a href="#ajuda">Como Ajudar</a>
+</nav>
 
-            /* ESTILO PARA O BLOCO VERDE QUE SEGURA TUDO */
-            .bloco1{
-                background-color: #009440; /* DEFINE A COR DE FUNDO COMO VERDE */
-                padding: 20px; /* COLOCA UM ESPAÇO DE 20 PIXELS DENTRO */
-                font-family: sans-serif; /* USA UMA FONTE SEM AQUELAS SERIFAS */
-                text-align: center; /* ALINHA TODO O TEXTO NO MEIO */
-                color: white; /* COLOCA A COR DA LETRA COMO BRANCO */
-            } /* FECHA O ESTILO DO BLOCO 1 */
+<section class="banner">
+  <div class="banner-texto">
+    <h2>O Futuro Depende das Nossas Ações</h2>
+    <p>Pequenas atitudes podem transformar o planeta.</p>
+  </div>
+</section>
 
+<main>
 
-            /* ESTILO PARA A CAIXA QUE FICA NO CENTRO */
-            .caixa-meio {
-                border: 2px solid #ccc; /* COLOCA UMA BORDA CINZA DE 2 PIXELS */
-                margin: 20px; /* EMPURRA AS COISAS DE FORA 20 PIXELS */
-                padding: 15px; /* EMPURRA O TEXTO DE DENTRO 15 PIXELS */
-                color: black; /* MUDA A LETRA PARA PRETO PARA LER MELHOR */
-            } /* FECHA O ESTILO DA CAIXA MEIO */
+  <section class="card" id="sobre">
+    <h2>O que é o Agrinho?</h2>
+    <p>
+      O Agrinho é um projeto educacional que incentiva os alunos a refletirem
+      sobre cidadania, sustentabilidade, preservação ambiental e tecnologia no campo.
+    </p>
+  </section>
 
-            /* ESTILO DO BOTÃO AMARELO */
-            #btn1 {
-                background: #06402b; /* COLOCA COR DO FUNDO DO BOTÃO */
-                border: none; /* TIRA AQUELA BORDA FEIA DO BOTÃO */
-                padding: 10px; /* DEFINE O TAMANHO INTERNO DO BOTÃO */
-                font-weight: bold; /* DEIXA O TEXTO EM NEGRITO */
-                cursor: pointer; /* MOSTRA A MÃOZINHA QUANDO PASSA O MOUSE */
-            } /* FECHA O ESTILO DO BOTÃO */
+  <section class="card" id="problemas">
+    <h2>Problemas Ambientais</h2>
 
-            /* ESTILO DO TEXTO DO RODAPÉ */
-            .texto1 {
-                font-size: 12px; /* DEIXA A LETRA BEM PEQUENININHA */
-                margin-top: 50px; /* EMPURRA O RODAPÉ PARA BAIXO */
-                border-top: 1px solid #000; /* CRIA UMA LINHA PRETA EM CIMA */
-            } /* FECHA O ESTILO DO TEXTO 1 */
+    <ul>
+      <li>Desmatamento das florestas</li>
+      <li>Poluição dos rios e mares</li>
+      <li>Queimadas ilegais</li>
+      <li>Excesso de lixo plástico</li>
+      <li>Desperdício de água</li>
+      <li>Aquecimento global</li>
+    </ul>
+  </section>
 
-            /* FIM DA TAG DE ESTILO CSS */
-        </style>
-    </head>
-    <body>
-       
-        <div class="bloco1">
+  <section class="card" id="solucoes">
+    <h2>Soluções Sustentáveis</h2>
 
-            <div style="font-size: 25px;">TEMA AGRINHO - Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente </div>
-            <div class="caixa-meio">
-                <p>Terra do Amanhã | Acessibilidade & Sustentabilidade</p>
+    <div class="grid">
+      <div class="mini-card">
+        <h3>Energia Limpa</h3>
+        <p>Uso de energia solar e eólica para diminuir a poluição.</p>
+      </div>
 
-                <div id="btn1" onclick="alert('Incrível, né?')">CLIQUE AQUI</div>
-            </div>
+      <div class="mini-card">
+        <h3>Reciclagem</h3>
+        <p>Separar resíduos ajuda a reduzir o lixo no planeta.</p>
+      </div>
 
-            <div class="texto1">Criado por mim</div>
-        </div>
+      <div class="mini-card">
+        <h3>Tecnologia no Campo</h3>
+        <p>Drones e sensores ajudam a economizar água e aumentar a produção.</p>
+      </div>
 
-        <script>
-            // MANDA UMA MENSAGEM PARA O CONSOLE DO DESENVOLVEDOR
-            console.log("O site abriu."); // REGISTRA O LOG DE ABERTURA
-        </script>
-    </body>
-</html>
+      <div class="mini-card">
+        <h3>Plantio de Árvores</h3>
+        <p>As árvores ajudam na produção de oxigênio e no combate ao calor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="ajuda">
+    <h2>Como Podemos Ajudar?</h2>
+
+    <p>
+      Todos podem contribuir para um planeta melhor através de atitudes simples:
+    </p>
+
+    <button onclick="mostrarDica()">
+      Clique para receber uma dica sustentável
+    </button>
+
+    <p id="dica"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Projeto Escolar - Agrinho 2026</p>
+</footer>
